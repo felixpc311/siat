@@ -5,7 +5,7 @@ import java.util.List;
 import com.adso.siat.dto.MatriculaDTO;
 import com.adso.siat.models.Matricula;
 
-public interface IMatriculaMApper {
+public interface IMatriculaMapper {
 
     public void updateMatricula(Matricula matricula, MatriculaDTO matriculaDTO);
 

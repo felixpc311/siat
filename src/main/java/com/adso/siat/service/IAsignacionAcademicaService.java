@@ -9,4 +9,5 @@ public interface IAsignacionAcademicaService {
     public List<AsignacionAcademicaDTO> getAsignacionesAcademicas();
     public AsignacionAcademicaDTO getAsignacionAcademicaById(Long asignacionAcademicaId);
     public AsignacionAcademicaDTO updateAsignacionAcademica(Long asignacionAcademicaId, AsignacionAcademicaDTO asignacionAcademicaDTO);
+    public AsignacionAcademicaDTO deleteAsignacionAcademicaById(Long asignacionAcademicaId);
 }

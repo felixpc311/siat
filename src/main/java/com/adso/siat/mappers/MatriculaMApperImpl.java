@@ -5,7 +5,7 @@ import java.util.List;
 import com.adso.siat.dto.MatriculaDTO;
 import com.adso.siat.models.Matricula;
 
-public class MatriculaMApperImpl implements IMatriculaMApper {
+public class MatriculaMapperImpl implements IMatriculaMapper {
 
     @Override
     public void updateMatricula(Matricula matricula, MatriculaDTO matriculaDTO) {
