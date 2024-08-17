@@ -2,9 +2,12 @@ package com.adso.siat.mappers;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.adso.siat.dto.GradoDTO;
 import com.adso.siat.models.Grado;
 
+@Component
 public class GradoMapperImpl implements IGradoMapper {
 
     @Override

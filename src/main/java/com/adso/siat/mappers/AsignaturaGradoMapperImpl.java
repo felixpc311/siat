@@ -2,9 +2,12 @@ package com.adso.siat.mappers;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.adso.siat.dto.AsignaturaGradoDTO;
 import com.adso.siat.models.AsignaturaGrado;
 
+@Component
 public class AsignaturaGradoMapperImpl implements IAsignaturaGradoMapper {
 
     @Override

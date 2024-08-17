@@ -2,9 +2,11 @@ package com.adso.siat.mappers;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.adso.siat.dto.MatriculaDTO;
 import com.adso.siat.models.Matricula;
-
+@Component
 public class MatriculaMapperImpl implements IMatriculaMapper {
 
     @Override

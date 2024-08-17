@@ -2,9 +2,12 @@ package com.adso.siat.mappers;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.adso.siat.dto.AnioLectivoDTO;
 import com.adso.siat.models.AnioLectivo;
 
+@Component
 public class AnioLectivoMapperImpl implements IAnioLectivoMapper{
 
     @Override

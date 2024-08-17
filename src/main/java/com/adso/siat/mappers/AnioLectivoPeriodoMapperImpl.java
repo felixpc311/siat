@@ -2,9 +2,12 @@ package com.adso.siat.mappers;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.adso.siat.dto.AnioLectivoPeriodoDTO;
 import com.adso.siat.models.AnioLectivoPeriodo;
 
+@Component
 public class AnioLectivoPeriodoMapperImpl implements IAnioLectivoPeriodoMapper {
 
     @Override

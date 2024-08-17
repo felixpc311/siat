@@ -18,7 +18,7 @@ import com.adso.siat.service.AnioLectivoServiceImpl;
 import com.adso.siat.utils.Utilities;
 
 @RestController
-@RequestMapping("/api/v1/anioLectivo")
+@RequestMapping("/api/v1/aniolectivo")
 @CrossOrigin(origins = "http://localhost:4200")
 public class AnioLectivoController {
     @Autowired
@@ -45,7 +45,7 @@ public class AnioLectivoController {
                 HttpStatus.BAD_REQUEST);
     }
 
-    @PostMapping("/save/anioLectivo")
+    @PostMapping("/save")
     public ResponseEntity<Object> saveAnioLectivo(@RequestBody AnioLectivoDTO anioLectivoDTO){
         try {
             anioLectivoService.saveAnioLectivo(anioLectivoDTO);

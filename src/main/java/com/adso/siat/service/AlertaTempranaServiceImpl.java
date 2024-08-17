@@ -11,8 +11,10 @@ import com.adso.siat.models.AlertaTemprana;
 import com.adso.siat.repository.AlertaTempranaRepository;
 @Service
 public class AlertaTempranaServiceImpl implements IAlertaTempranaService {
+    
     @Autowired
     private AlertaTempranaRepository alertaTempranaRepository;
+
     @Autowired
     private AlertaTempranaMapperImpl alertaTempranaMapperImpl;
 

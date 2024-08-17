@@ -2,9 +2,12 @@ package com.adso.siat.mappers;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.adso.siat.dto.GrupoDTO;
 import com.adso.siat.models.Grupo;
 
+@Component
 public class GrupoMapperImpl implements IGrupoMapper {
 
     @Override
