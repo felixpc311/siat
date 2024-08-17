@@ -1,5 +1,7 @@
 package com.adso.siat.dto;
 
+import com.adso.siat.models.Grado;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,7 +12,7 @@ import lombok.Getter;
 public class GrupoDTO {
     
     private final Long grupoId;
-    private final GradoDTO gradoDTO ;
+    private final Grado grado;
     private final String grupoCodigo;
 
 

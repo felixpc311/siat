@@ -9,6 +9,6 @@ import lombok.Getter;
 @Builder
 public class PeriodoAcademicoDTO {
 
-    private final Long peridoAcademicoIdDTO;
-    private final int periodoAcademicoNumeroDTO;
+    private final Long peridoAcademicoId;
+    private final int periodoAcademicoNumero;
 }

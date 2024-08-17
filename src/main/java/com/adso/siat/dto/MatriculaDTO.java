@@ -1,5 +1,9 @@
 package com.adso.siat.dto;
 
+import com.adso.siat.models.Alumno;
+import com.adso.siat.models.AnioLectivo;
+import com.adso.siat.models.Grupo;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -9,7 +13,7 @@ import lombok.Getter;
 @Builder
 public class MatriculaDTO {
     private final Long matriculaId;
-    private final AnioLectivoDTO anioLectivo;
-    private final AlumnoDTO alumno;
-    private final GrupoDTO grupo;
+    private final AnioLectivo anioLectivo;
+    private final Alumno alumno;
+    private final Grupo grupo;
 }

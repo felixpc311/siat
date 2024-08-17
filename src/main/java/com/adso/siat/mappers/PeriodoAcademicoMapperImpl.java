@@ -17,8 +17,8 @@ public class PeriodoAcademicoMapperImpl implements IPeriodoAcademicoMapper{
         }
 
         return PeriodoAcademicoDTO.builder()
-                .peridoAcademicoIdDTO(periodoAcademico.getPeridoAcademicoId())
-                .periodoAcademicoNumeroDTO(periodoAcademico.getPeriodoAcademicoNumero())
+                .peridoAcademicoId(periodoAcademico.getPeridoAcademicoId())
+                .periodoAcademicoNumero(periodoAcademico.getPeriodoAcademicoNumero())
                 .build();
 
     }
@@ -30,8 +30,8 @@ public class PeriodoAcademicoMapperImpl implements IPeriodoAcademicoMapper{
         }
 
         return PeriodoAcademico.builder()
-                .peridoAcademicoId(periodoAcademicoDTO.getPeridoAcademicoIdDTO())
-                .periodoAcademicoNumero(periodoAcademicoDTO.getPeriodoAcademicoNumeroDTO())
+                .peridoAcademicoId(periodoAcademicoDTO.getPeridoAcademicoId())
+                .periodoAcademicoNumero(periodoAcademicoDTO.getPeriodoAcademicoNumero())
                 .build();
 
     }
@@ -41,7 +41,8 @@ public class PeriodoAcademicoMapperImpl implements IPeriodoAcademicoMapper{
         if (periodoAcademicoList == null) {
             return null;
         }
-        return periodoAcademicoList.stream().map(this::mapToPeriodoAcademicoDTO).toList();
+        List<PeriodoAcademicoDTO> list = periodoAcademicoList.stream().map(this::mapToPeriodoAcademicoDTO).toList();
+        return list;
     }
 
     @Override
@@ -49,8 +50,8 @@ public class PeriodoAcademicoMapperImpl implements IPeriodoAcademicoMapper{
         if (periodoAcademicoDTO == null) {
             return;
         }
-        periodoAcademico.setPeridoAcademicoId(periodoAcademicoDTO.getPeridoAcademicoIdDTO());
-        periodoAcademico.setPeriodoAcademicoNumero(periodoAcademicoDTO.getPeriodoAcademicoNumeroDTO());
+        periodoAcademico.setPeridoAcademicoId(periodoAcademicoDTO.getPeridoAcademicoId());
+        periodoAcademico.setPeriodoAcademicoNumero(periodoAcademicoDTO.getPeriodoAcademicoNumero());
     }
 
 }

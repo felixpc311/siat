@@ -1,5 +1,8 @@
 package com.adso.siat.dto;
 
+import com.adso.siat.models.Asignatura;
+import com.adso.siat.models.Grado;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,9 +13,9 @@ import lombok.Getter;
 public class AsignaturaGradoDTO {
     private final Long asignaturaGradoId;
 
-    private final AsignaturaDTO asignatura;
+    private final Asignatura asignatura;
 
-    private final GradoDTO grado;
+    private final Grado grado;
 
     
 

@@ -1,6 +1,6 @@
 package com.adso.siat.models;
 
-import java.sql.Date;
+import java.util.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
