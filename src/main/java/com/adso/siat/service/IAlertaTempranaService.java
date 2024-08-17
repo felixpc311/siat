@@ -9,4 +9,5 @@ public interface IAlertaTempranaService {
     public List<AlertaTempranaDTO> getAlertasTempranas();
     public AlertaTempranaDTO getAlertaTempranaById(Long alertaTempranaId);
     public AlertaTempranaDTO updateAlertaTemprana(Long alertaTempranaId, AlertaTempranaDTO alertaTempranaDTO);
+    public AlertaTempranaDTO deleteAlertaTempranaById(Long alertaTempranaId);
 }
